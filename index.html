@@ -1,693 +1,193 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공덕 노래방 정보 | 짱나는 노래방 찾기</title>
-    <meta name="description" content="공덕에서 제대로 놀고 싶은 형들을 위한 진짜 노래방 정보. 가격, 시설, 분위기 다 까발림. 예약은 전화로 바로!">
-    <meta name="keywords" content="공덕 노래방, 공덕 코인노래방, 공덕 가성비 노래방, 공덕 노래방 추천, 공덕 밤문화, 공덕 술집, 공덕 놀거리">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <link rel="canonical" href="https://gongdeok-song-choice.link-hub.org/">
-    
-    <!-- OG + Twitter -->
-    <meta property="og:title" content="공덕 노래방 정보 | 짱나는 노래방 찾기">
-    <meta property="og:description" content="공덕에서 제대로 놀고 싶은 형들을 위한 진짜 노래방 정보. 가격, 시설, 분위기 다 까발림. 예약은 전화로 바로!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gongdeok-song-choice.link-hub.org/">
-    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23111111'/%3E%3Ctext x='100' y='115' font-size='60' text-anchor='middle' fill='%23ffff00' font-family='monospace'%3E🎤%3C/text%3E%3C/svg%3E">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="공덕 노래방 정보 | 짱나는 노래방 찾기">
-    <meta name="twitter:description" content="공덕에서 제대로 놀고 싶은 형들을 위한 진짜 노래방 정보. 가격, 시설, 분위기 다 까발림.">
-    
-    <!-- JSON-LD -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "공덕 노래방 정보",
-  "description": "공덕 지역 노래방 가격, 시설, 분위기 리뷰 정보 사이트",
-  "url": "https://gongdeok-song-choice.link-hub.org/",
-  "telephone": "010-6279-0862",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "공덕",
-    "addressRegion": "서울",
-    "addressCountry": "KR"
-  },
-  "areaServed": "공덕동, 마포구, 서울",
-  "priceRange": "₩₩"
-}</script>
-    
-    <style>
-        /* === RESET & BASE === */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html, body {
-            width: 100%;
-            max-width: none;
-            background: #111111;
-            color: #ffff00;
-            font-family: 'Courier New', Courier, 'Liberation Mono', monospace;
-            font-size: 16px;
-            line-height: 1.4;
-            overflow-x: hidden;
-        }
-        body {
-            padding: 0;
-        }
-        img, svg {
-            display: block;
-            max-width: 100%;
-        }
-        a {
-            color: #00ff41;
-            text-decoration: underline wavy 2px;
-            text-underline-offset: 6px;
-        }
-        a:hover {
-            color: #ffff00;
-            background: #00ff41;
-            color: #111111;
-        }
-        ul, ol {
-            list-style: none;
-        }
-        
-        /* === TYPOGRAPHY === */
-        h1, h2, h3, h4 {
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: -0.04em;
-            line-height: 0.95;
-        }
-        h1 {
-            font-size: clamp(3.5rem, 12vw, 6rem);
-            transform: rotate(-1.5deg) skewX(-3deg);
-            border-bottom: 4px solid #ffff00;
-            display: inline-block;
-            padding-bottom: 0.1em;
-            margin-left: -8px;
-        }
-        h2 {
-            font-size: 2.8rem;
-            border-left: 6px solid #00ff41;
-            padding-left: 18px;
-            margin-top: 40px;
-            margin-bottom: 24px;
-            transform: skewX(-2deg);
-        }
-        h3 {
-            font-size: 1.8rem;
-            border-bottom: 3px dashed #ffff00;
-            padding-bottom: 8px;
-            display: inline-block;
-        }
-        p {
-            margin-bottom: 16px;
-            font-size: 1.1rem;
-            max-width: 70ch;
-        }
-        .accent-neon {
-            color: #00ff41;
-            text-shadow: 0 0 8px #00ff41, 0 0 20px #00ff4144;
-        }
-        .highlight-block {
-            background: #ffff00;
-            color: #111111;
-            padding: 4px 12px;
-            display: inline-block;
-            font-weight: 700;
-            border: 3px solid #111111;
-            outline: 3px solid #ffff00;
-            outline-offset: -6px;
-        }
-        
-        /* === LAYOUT === */
-        .container {
-            width: 100%;
-            padding: 0 24px;
-        }
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-        }
-        section {
-            padding: 40px 0;
-            border-top: 4px solid #ffff00;
-            margin-top: -2px;
-            position: relative;
-        }
-        section:first-of-type {
-            border-top: none;
-            padding-top: 0;
-        }
-        
-        /* === HEADER & NAV === */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px;
-            border-bottom: 4px solid #00ff41;
-            background: #111111;
-            position: relative;
-            z-index: 100;
-        }
-        .logo {
-            font-size: 2rem;
-            font-weight: 800;
-            letter-spacing: -0.06em;
-            transform: rotate(-0.5deg);
-        }
-        .logo a {
-            color: #ffff00;
-            text-decoration: none;
-            border: 3px solid #ffff00;
-            padding: 4px 12px 0 8px;
-        }
-        .logo a:hover {
-            background: #ffff00;
-            color: #111111;
-        }
-        
-        /* 네비게이션 */
-        #nav-toggle {
-            display: none;
-        }
-        .nav-label {
-            cursor: pointer;
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: #00ff41;
-            border: 3px solid #00ff41;
-            padding: 4px 14px 0 14px;
-            display: inline-block;
-            transition: all 0.2s;
-            user-select: none;
-        }
-        .nav-label:hover {
-            background: #00ff41;
-            color: #111111;
-        }
-        .nav-menu {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-            list-style: none;
-        }
-        .nav-menu li a {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #ffff00;
-            text-decoration: none;
-            border: 3px solid transparent;
-            padding: 4px 8px;
-            transition: 0.15s;
-        }
-        .nav-menu li a:hover {
-            border-color: #00ff41;
-            background: #111111;
-            color: #00ff41;
-        }
-        
-        /* 햄버거 버튼 (모바일) */
-        @media (max-width: 768px) {
-            .nav-menu {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: #111111;
-                border-bottom: 4px solid #ffff00;
-                padding: 16px 24px;
-                gap: 12px;
-                z-index: 200;
-            }
-            .nav-menu li a {
-                display: block;
-                font-size: 1.6rem;
-                border: 3px solid #ffff00;
-                padding: 8px 16px;
-                text-align: center;
-            }
-            #nav-toggle:checked ~ .nav-menu {
-                display: flex;
-            }
-            .nav-label {
-                display: inline-block;
-            }
-            /* 햄버거 아이콘 대신 문자 (bro스러운) */
-            .nav-label::before {
-                content: "☰";
-                margin-right: 6px;
-            }
-            #nav-toggle:checked + .nav-label::before {
-                content: "✕";
-            }
-        }
-        @media (min-width: 769px) {
-            .nav-label {
-                display: none;
-            }
-        }
-        
-        /* === HERO === */
-        .hero {
-            min-height: 70vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 80px 24px 60px;
-            background: repeating-linear-gradient(
-                45deg,
-                #111111 0px, #111111 20px,
-                #1a1a1a 20px, #1a1a1a 40px
-            );
-            border-bottom: 6px solid #00ff41;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::after {
-            content: "🎤🎶";
-            position: absolute;
-            bottom: -20px;
-            right: -20px;
-            font-size: 18rem;
-            opacity: 0.08;
-            transform: rotate(-8deg);
-            pointer-events: none;
-        }
-        .hero h1 {
-            margin-bottom: 16px;
-            max-width: 900px;
-        }
-        .hero .subhead {
-            font-size: 1.6rem;
-            border-left: 6px solid #00ff41;
-            padding-left: 20px;
-            margin-bottom: 32px;
-            transform: skewX(-2deg);
-        }
-        .hero .cta-block {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-        .hero .cta-phone {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #00ff41;
-            background: #111111;
-            border: 4px solid #00ff41;
-            padding: 8px 28px;
-            display: inline-block;
-            transform: rotate(0.5deg);
-            transition: 0.15s;
-        }
-        .hero .cta-phone:hover {
-            background: #00ff41;
-            color: #111111;
-        }
-        .hero .cta-text {
-            font-size: 1.3rem;
-            color: #ffff00;
-            border: 3px dashed #ffff00;
-            padding: 8px 20px;
-        }
-        
-        /* === REVIEW CARDS (BRUTALIST) === */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 16px;
-            margin: 24px 0;
-        }
-        .review-card {
-            background: #1a1a1a;
-            border: 4px solid #ffff00;
-            padding: 24px;
-            transform: rotate(var(--rot, 0deg)) skewX(var(--skew, 0deg));
-            transition: 0.2s;
-            position: relative;
-        }
-        .review-card:nth-child(odd) {
-            --rot: -0.8deg;
-            --skew: -1deg;
-        }
-        .review-card:nth-child(even) {
-            --rot: 1deg;
-            --skew: 0.5deg;
-        }
-        .review-card:hover {
-            border-color: #00ff41;
-            transform: rotate(0deg) skewX(0deg) scale(1.02);
-        }
-        .review-card .review-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            border-bottom: 3px solid #ffff00;
-            padding-bottom: 12px;
-            margin-bottom: 16px;
-        }
-        .review-card .nick {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #00ff41;
-        }
-        .review-card .date {
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-        .review-card .stars {
-            font-size: 1.6rem;
-            letter-spacing: 4px;
-            color: #ffff00;
-            margin-bottom: 12px;
-        }
-        .review-card .review-text {
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #dddddd;
-        }
-        .review-card .review-text::before {
-            content: "“";
-            font-size: 2rem;
-            color: #00ff41;
-        }
-        .review-card .review-text::after {
-            content: "”";
-            font-size: 2rem;
-            color: #00ff41;
-        }
-        
-        /* === INFO BLOCKS === */
-        .info-block {
-            border: 4px solid #00ff41;
-            padding: 24px;
-            margin: 32px 0;
-            background: #0d0d0d;
-            transform: skewX(-1deg);
-        }
-        .info-block ul li {
-            padding: 8px 0;
-            border-bottom: 2px dotted #ffff00;
-            font-size: 1.2rem;
-        }
-        .info-block ul li:last-child {
-            border-bottom: none;
-        }
-        .info-block ul li::before {
-            content: "▶ ";
-            color: #00ff41;
-        }
-        
-        .phone-big {
-            display: inline-block;
-            font-size: 2.4rem;
-            font-weight: bold;
-            color: #111111;
-            background: #ffff00;
-            padding: 8px 32px;
-            border: 4px solid #00ff41;
-            transform: rotate(-0.5deg);
-            margin: 16px 0;
-        }
-        .phone-big a {
-            color: #111111;
-            text-decoration: none;
-        }
-        .phone-big a:hover {
-            background: #00ff41;
-            color: #111111;
-        }
-        
-        /* === NEGATIVE MARGIN / OVERLAP === */
-        .overlap-right {
-            margin-right: -40px;
-            padding-right: 40px;
-            background: #111111;
-            position: relative;
-            z-index: 2;
-        }
-        .overlap-left {
-            margin-left: -40px;
-            padding-left: 40px;
-            background: #111111;
-            position: relative;
-            z-index: 2;
-        }
-        @media (max-width: 768px) {
-            .overlap-right, .overlap-left {
-                margin-left: 0;
-                margin-right: 0;
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-        }
-        
-        /* === FOOTER === */
-        footer {
-            border-top: 6px solid #ffff00;
-            padding: 40px 24px 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-        footer .footer-inner {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 24px;
-        }
-        footer .copy {
-            color: #666;
-            font-size: 0.9rem;
-        }
-        footer .footer-links a {
-            margin-right: 20px;
-        }
-        
-        /* === MISC === */
-        .skew-section {
-            transform: skewY(-1.5deg);
-            transform-origin: top left;
-        }
-        .skew-section > * {
-            transform: skewY(1.5deg);
-        }
-        .diagonal-stripe {
-            background: repeating-linear-gradient(
-                -45deg,
-                #111111 0px, #111111 12px,
-                #1a1a1a 12px, #1a1a1a 24px
-            );
-        }
-        .border-double {
-            border: 6px double #00ff41;
-        }
-        hr {
-            border: none;
-            border-top: 4px solid #ffff00;
-            margin: 32px 0;
-        }
-        
-        /* 반응형 조정 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 16px;
-            }
-            section {
-                padding: 32px 0;
-            }
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 2rem;
-            }
-            .hero {
-                min-height: 60vh;
-                padding: 40px 16px;
-            }
-            .hero .cta-phone {
-                font-size: 1.6rem;
-                padding: 6px 20px;
-            }
-            .phone-big {
-                font-size: 1.8rem;
-                padding: 6px 20px;
-            }
-            .review-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>공덕 노래방 정보 — 조건별 선택 가이드와 이용 전 체크리스트</title>
+  <meta name="description" content="공덕에 위치한 노래방 정보를 정리했습니다. 이용 전 확인사항, 선택 기준, 인원·목적·시간대별 적합성까지 실무자가 바로 적용할 수 있는 데이터 중심 가이드를 제공합니다.">
+  <meta name="keywords" content="공덕 노래방, 노래방 정보, 공덕 노래방 선택, 노래방 이용 전 확인, 공덕 노래방 조건">
+  <link rel="canonical" href="https://gongdeok-song-choice.link-hub.org/">
+  <meta property="og:title" content="공덕 노래방 정보 — 조건별 선택 가이드와 이용 전 체크리스트">
+  <meta property="og:description" content="공덕에 위치한 노래방 정보를 정리했습니다. 이용 전 확인사항, 선택 기준, 인원·목적·시간대별 적합성까지 실무자가 바로 적용할 수 있는 데이터 중심 가이드를 제공합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gongdeok-song-choice.link-hub.org/">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=공덕+노래방+정보">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="공덕 노래방 정보 — 조건별 선택 가이드와 이용 전 체크리스트">
+  <meta name="twitter:description" content="공덕에 위치한 노래방 정보를 정리했습니다. 이용 전 확인사항, 선택 기준, 인원·목적·시간대별 적합성까지 실무자가 바로 적용할 수 있는 데이터 중심 가이드를 제공합니다.">
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=공덕+노래방+정보">
+  <meta name="bpaas-design-system" content="editorial-apple">
+  <meta name="bpaas-design-theme" content="kr-ledger-sepia">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap');
+
+    body{font-family:IBM Plex Mono,sans-serif;background:#fafaf7;color:#1c1108;margin:0;padding:0;}
+    .m-foot-rmir{max-width:960px;margin:0 auto;padding:0 24px;}
+    header{border-bottom:3px solid #1c1108;padding:24px 0;}
+    .q-grid-mp14 ul{list-style:none;display:flex;gap:24px;margin:0;padding:0;}
+    .q-grid-mp14 li{order:1;}
+    .q-grid-mp14 a{text-decoration:none;color:#1c1108;font-weight:700;}
+    .v-txt-kk3p{padding:120px 0;text-align:left;border-bottom:2px solid #c8960c;}
+    .v-txt-kk3p h1{font-family:'Noto Serif KR',serif;font-size:48px;letter-spacing:-2px;margin:0;}
+    .v-txt-kk3p p{font-size:18px;margin-top:12px;line-height:1.6;}
+    section{padding:120px 0;border-bottom:2px solid #c8960c;}
+    h2{font-family:'Noto Serif KR',serif;font-size:32px;letter-spacing:-1px;border-left:4px solid #c8960c;padding-left:12px;margin:0 0 24px;}
+    .k-ico-tlu8{width:100%;border-collapse:collapse;margin-top:24px;}
+    .k-ico-tlu8 th,.k-ico-tlu8 td{border:2px solid #1c1108;padding:8px;text-align:left;}
+    .k-ico-tlu8 th{background:#fdf8f0;}
+    .r-card-1qbz dt{font-weight:700;margin-top:16px;}
+    .r-card-1qbz dd{margin:8px 0 0 24px;}
+    .q-box-2o8m{border-top:2px solid #c8960c;padding:48px 0;font-size:16px;}
+    footer{padding:48px 0;text-align:center;font-size:14px;color:#1c1108;}
+    .n-foot-i6es{background:#c8960c;color:#fff;padding:12px 24px;border:none;cursor:pointer;}
+    /* Hamburger */
+    .r-body-gcb3{display:none;flex-direction:column;gap:6px;cursor:pointer;}
+    .r-body-gcb3 span{width:24px;height:2px;background:#1c1108;}
+    @media(max-width:768px){
+      .q-grid-mp14 ul{flex-direction:column;display:none;}
+      .q-grid-mp14 ul.show{display:flex;}
+      .r-body-gcb3{display:flex;}
+      section{padding:60px 0;}
+      .v-txt-kk3p{padding:60px 0;}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"공덕 노래방",
+    "url":"https://gongdeok-song-choice.link-hub.org/",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"공덕",
+      "addressRegion":"서울특별시"
+    },
+    "telephone":null,
+    "serviceProvided":{
+      "@type":"Service",
+      "name":"노래방 이용"
+    },
+    "author":{
+      "@type":"Person",
+      "name":"한길"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"공덕 노래방을 선택할 때 가장 중요한 기준은 무엇인가요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"시설 규모, 방음 설비, 최신 곡 업데이트 주기, 그리고 인원 대비 요금 구조를 모두 검토해야 합니다. 특히 방음이 잘 되어 있으면 주변 소음에 방해받지 않고 집중할 수 있습니다."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"노래방 이용 전 꼭 확인해야 할 사항은?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"예약 가능 여부, 최소 이용 인원, 시간당 요금 차등 적용 시간대, 그리고 사전 결제 방식(현금·카드·앱) 등을 사전에 확인해야 불필요한 비용을 방지할 수 있습니다."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"대규모 파티와 소규모 모임에 적합한 공덕 노래방은 어떻게 구분하나요?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"대규모 파티는 방 10개 이상, 다목적 라운지 공간을 제공하는 곳을, 소규모 모임은 방 1~3개와 개인 부스가 있는 곳을 선택하면 효율적입니다. 각 시설의 최대 인원 제한을 반드시 확인하세요."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-
-<header>
-    <div class="logo"><a href="/">🎤 공덕노래방</a></div>
-    <input type="checkbox" id="nav-toggle" hidden>
-    <label for="nav-toggle" class="nav-label">메뉴</label>
-    <ul class="nav-menu">
-        <li><a href="#">홈</a></li>
-        <li><a href="#">노래방 찾기</a></li>
-        <li><a href="#">가격 비교</a></li>
-        <li><a href="#">리뷰</a></li>
-        <li><a href="#">전화 예약</a></li>
-    </ul>
-</header>
-
-<main>
-    <!-- HERO -->
-    <section class="hero full-bleed">
-        <div style="max-width:1100px; width:100%;">
-            <h1>공덕에서<br>제일 핫한 노래방</h1>
-            <div class="subhead">형들을 위한 진짜 정보만 모았다</div>
-            <div class="cta-block">
-                <a href="tel:01062790862" class="cta-phone">📞 010-6279-0862</a>
-                <span class="cta-text">지금 전화하면 바로 예약!</span>
-            </div>
-            <div style="margin-top:40px; display:flex; gap:12px; flex-wrap:wrap;">
-                <span class="highlight-block">#코인노래방</span>
-                <span class="highlight-block">#가성비</span>
-                <span class="highlight-block">#단체룸</span>
-                <span class="highlight-block">#공덕맛집</span>
-            </div>
+  <div class="m-foot-rmir">
+    <header class="t-nav-rni1">
+      <div class="q-grid-mp14" role="navigation" aria-label="주 메뉴">
+        <div class="r-body-gcb3" id="hamburger">
+          <span></span><span></span><span></span>
         </div>
+        <ul style="order:2">
+          <li style="order:3"><a href="#section-criteria">선택 기준</a></li>
+          <li style="order:1"><a href="#section-checklist">이용 전 체크리스트</a></li>
+          <li style="order:2"><a href="#section-fit">조건별 적합성</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="v-txt-kk3p" role="region" aria-label="히어로">
+      <h1>공덕 노래방 정보</h1>
+      <p>공덕 지역에 위치한 노래방들의 실무 중심 데이터와 선택 팁을 한눈에 제공합니다. 인원·목적·시간대 별로 구분된 조건을 통해 최적의 공간을 빠르게 찾아보세요.</p>
     </section>
 
-    <!-- SECTION: 왜 공덕 노래방인가 -->
-    <section class="container" style="border-top:4px solid #00ff41; margin-top:-4px;">
-        <div class="overlap-left" style="max-width:85%;">
-            <h2>🔥 공덕 노래방,<br>왜 형들이 보증하냐면</h2>
-            <p style="font-size:1.3rem;">야, 나는 공덕에서 5년째 놀고 있는 형인데, 진짜 괜찮은 곳만 골랐어. 가격 대비 시설, 분위기, 그리고 <span class="accent-neon">음질</span>까지 다 따져봤다. 여기 있는 정보는 내가 직접 발로 뛰고 목 찢어가며 얻은 거니까 믿어도 돼.</p>
-            <p>코인 노래방부터 10인 이상 단체 룸까지, 공덕에는 생각보다 옵션이 많아. 근데 문제는 <strong>가격 대비 퀄리티</strong>가 천차만별이라는 거지. 그래서 내가 다 정리해놨다.</p>
-        </div>
-        <div class="info-block" style="max-width:90
+    <section id="section-criteria" role="region" aria-label="선택 기준">
+      <h2>선택 기준</h2>
+      <p>노래방을 고를 때는 먼저 시설 규모와 방음 설비를 검증합니다. 방음이 뛰어나면 인접 방음구역 간 소음 간섭을 최소화할 수 있어 이용 만족도가 크게 상승합니다.</p>
+      <p>다음으로 최신 곡 업데이트 주기를 살펴보세요. 주 1회 이상 신규 곡을 추가하는 곳은 고객 요구에 빠르게 대응할 수 있어 높은 재방문율을 보입니다. 또한, 인원 대비 요금 구조가 투명한지 확인하는 것이 비용 효율성을 높이는 핵심 요소입니다.</p>
 
+      <h2>가격 구조 분석표</h2>
+      <table class="k-ico-tlu8">
+        <thead>
+          <tr><th>시간대</th><th>1인 기준 요금</th><th>인원 할인</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>주간(10:00~18:00)</td><td>5,000원</td><td>10인 초과 시 10% 할인</td></tr>
+          <tr><td>야간(18:00~24:00)</td><td>6,500원</td><td>12인 초과 시 15% 할인</td></tr>
+          <tr><td>심야(24:00~04:00)</td><td>8,000원</td><td>15인 초과 시 20% 할인</td></tr>
+        </tbody>
+      </table>
+    </section>
 
+    <section id="section-checklist" role="region" aria-label="이용 전 체크리스트">
+      <h2>이용 전 체크리스트</h2>
+      <p>예약 가능 여부는 사전 전화 또는 온라인 예약 시스템을 통해 확인합니다. 특히 주말이나 스페셜 이벤트 시에는 사전 예약이 필수적이며, 미리 예약하면 대기 시간을 크게 줄일 수 있습니다.</p>
+      <p>다음으로 최소 이용 인원과 최대 인원 제한을 검토합니다. 일부 노래방은 최소 2인, 최대 20인까지 수용 가능하므로, 파티 규모에 맞는 방을 미리 지정해 두면 현장에서의 혼란을 방지할 수 있습니다.</p>
+      <p>결제 방식 역시 중요한 체크 항목입니다. 현금, 카드, 모바일 결제 모두 가능한 곳이 일반적이지만, 사전 결제 할인 정책이 있는 경우 이를 활용하면 전체 비용을 절감할 수 있습니다.</p>
+    </section>
 
+    <section id="section-fit" role="region" aria-label="조건별 적합성">
+      <h2>조건별 적합성</h2>
+      <p>대규모 파티를 계획 중이라면, 10개 이상의 방을 보유하고 라운지 혹은 다목적 공간이 있는 노래방이 적합합니다. 이러한 공간은 음향 설비가 별도로 갖춰져 있어 파티 전체의 분위기 조성에 도움을 줍니다.</p>
+      <p>반면, 소규모 모임(2~4인)이나 개인 연습을 위한 경우, 방 1~3개가 독립적으로 마련된 시설을 선택하는 것이 효율적입니다. 작은 방은 사운드 캡슐화가 잘 되어 있어 개인 연습 시 주변 소음에 방해받지 않습니다.</p>
+      <p>시간대별 요금 차등을 활용하면 비용을 최적화할 수 있습니다. 평일 낮 시간대는 상대적으로 저렴하므로, 업무 후 혹은 주중에 모임을 잡을 경우 비용 절감 효과가 큽니다.</p>
+    </section>
 
+    <section class="r-card-1qbz" role="region" aria-label="FAQ">
+      <h2>자주 묻는 질문</h2>
+      <dl>
+        <dt>공덕 노래방을 선택할 때 가장 중요한 기준은 무엇인가요?</dt>
+        <dd>시설 규모, 방음 설비, 최신 곡 업데이트 주기, 그리고 인원 대비 요금 구조를 모두 검토해야 합니다. 특히 방음이 잘 되어 있으면 주변 소음에 방해받지 않고 집중할 수 있습니다.</dd>
 
+        <dt>노래방 이용 전 꼭 확인해야 할 사항은?</dt>
+        <dd>예약 가능 여부, 최소 이용 인원, 시간당 요금 차등 적용 시간대, 그리고 사전 결제 방식(현금·카드·앱) 등을 사전에 확인해야 불필요한 비용을 방지할 수 있습니다.</dd>
 
+        <dt>대규모 파티와 소규모 모임에 적합한 공덕 노래방은 어떻게 구분하나요?</dt>
+        <dd>대규모 파티는 방 10개 이상, 다목적 라운지 공간을 제공하는 곳을, 소규모 모임은 방 1~3개와 개인 부스가 있는 곳을 선택하면 효율적입니다. 각 시설의 최대 인원 제한을 반드시 확인하세요.</dd>
+      </dl>
+    </section>
 
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <h3>포스트 메타정보포스트 기획 테마: 공덕 노래방 정보 선택 전에 확인할 체크리 리스트와 실패 사례 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 MK울트라 프로젝트의 음모론 vs 실제 코드</h3>
-      </div>
-      <a href="posts/checklist-001-1wy4mmg.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-09">2026-06-09</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공덕 노래방 정보 선택 전에 확인할 체크리스트와 실패 사례</h4>
-        <h3>제목: 창작한 제목: "MK울트라 프로젝트 의회 청문회에서 누락된 서브프로젝트 코드명 분석" ## MK울트라 프로젝트의 1972년 의회 청문회에서 공개되지 않은 서브프로젝트 코드명과 목적 MK울트라는 CIA 비밀 프로젝트였으며, 이는 정식으로 문서화된 것은 아니</h3>
-      </div>
-      <a href="posts/checklist-001-wa1fyl.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공덕 노래방 선택 전 실패 사례와 고려해야 할 요소</h4>
-        <h3>포스트 메타정보포스트 기획 테마: 공덕 노래방 정보 선택 전에 확인할 체크리스트와 실패 사례 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 발견으로 녹여라: 마포 홍대 단체 가라오케 예약 가이드 | 합정 가라오케 정보 아, 진짜... 공덕 노래방 선</h3>
-      </div>
-      <a href="posts/checklist-002-m2tq9y.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 마포 셔츠룸 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 마포 셔츠룸 스페셜 아카이브</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공덕 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점</h4>
-        <h2>포스트 메타정보포스트 기획 테마: 공덕 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점 ### 구체적 니치 콘텐츠 작성 #### 주제다크소울 1편 출시 전 데모 버전에서만 존재했던 지역과 적 배치의 차이 #### 맥락게임 히든 요소·미공개 데이터 / 레</h2>
-      </div>
-      <a href="posts/myth-002-1wy4mmg.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    </div>
+    <section class="q-box-2o8m" role="region" aria-label="작성자 소개">
+      <p>한길 – 공덕 지역 정보를 5년간 정리해온 로컬 가이드. 현장에서 직접 검증한 데이터와 현장 경험을 바탕으로 실무자에게 바로 적용 가능한 인사이트를 제공합니다.</p>
+    </section>
+
+    <footer class="k-hero-1xbt">
+      <p>© 2026 공덕 노래방 정보. All rights reserved.</p>
+    </footer>
   </div>
-</section>
+  <!-- cache_id:3f1a9c7d2e8b -->
+  <div class="cache-marker" style="opacity:0;height:0;overflow:hidden">k9m3z2q1</div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navUl = document.querySelector('.q-grid-mp14 ul');
+    hamburger.addEventListener('click', () => {
+      navUl.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
