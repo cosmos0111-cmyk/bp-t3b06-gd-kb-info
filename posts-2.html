@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b06-gd-kb-info</title>
+  <meta name="description" content="t3b06-gd-kb-info에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://gongdeok-song-choice.link-hub.org/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --bg-primary: #0a0a0a;
+ --bg-secondary: #111111;
+ --bg-card: #1a1a1a;
+ --text-primary: #e0e0e0;
+ --text-secondary: #b0b0b0;
+ --text-muted: #888888;
+ --accent-gold: #c8a45c;
+ --accent-gold-light: #d4b872;
+ --accent-gold-dark: #9a7b3a;
+ --border-color: #2a2a2a;
+ --border-light: #333333;
+ --font-display: 'Times New Roman', 'Noto Serif KR', serif;
+ --font-body: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Helvetica Neue', sans-serif;
+ --font-mono: 'SF Mono', 'Menlo', 'Consolas', monospace;
+ --spacing-xs: 0.5rem;
+ --spacing-sm: 1rem;
+ --spacing-md: 2rem;
+ --spacing-lg: 4rem;
+ --spacing-xl: 8rem;
+ --max-width: 1200px;
+ }
+
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ background-color: var(--bg-primary);
+ color: var(--text-primary);
+ font-family: var(--font-body);
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+
+ header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background-color: rgba(10, 10, 10, 0.85);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ border-bottom: 1px solid var(--border-color);
+ z-index: 1000;
+ padding: 1rem 0;
+ }
+
+ .header-inner {
+ max-width: var(--max-width);
+ margin: 0 auto;
+ padding: 0 var(--spacing-md);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: var(--font-display);
+ font-size: 1.5rem;
+ font-weight: 700;
+ color: var(--accent-gold);
+ text-decoration: none;
+ letter-spacing: 0.05em;
+ }
+
+ nav ul {
+ display: flex;
+ list-style: none;
+ gap: var(--spacing-md);
+ }
+
+ nav ul li a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ letter-spacing: 0.02em;
+ }
+ nav ul li a:hover {
+ color: var(--accent-gold);
+ }
+
+ .hero-section {
+ padding: 10rem 0 5rem;
+ text-align: center;
+ border-bottom: 1px solid var(--border-color);
+ }
+ .hero-eyebrow {
+ font-family: var(--font-mono);
+ font-size: 0.75rem;
+ text-transform: uppercase;
+ letter-spacing: 0.15em;
+ color: var(--accent-gold);
+ margin-bottom: var(--spacing-sm);
+ }
+ .hero-title {
+ font-family: var(--font-display);
+ font-size: 3.5rem;
+ font-weight: 700;
+ color: var(--text-primary);
+ line-height: 1.2;
+ max-width: 900px;
+ margin: 0 auto var(--spacing-sm);
+ letter-spacing: -0.02em;
+ }
+ .hero-subtitle {
+ font-size: 1.15rem;
+ color: var(--text-muted);
+ max-width: 650px;
+ margin: 0 auto;
+ font-weight: 400;
+ }
+
+ .main-content {
+ max-width: var(--max-width);
+ margin: 0 auto;
+ padding: var(--spacing-lg) var(--spacing-md);
+ }
+
+ .article-grid {
+ display: grid;
+ grid-template-columns: 1fr 320px;
+ gap: var(--spacing-lg);
+ align-items: start;
+ }
+
+ .article-body h2 {
+ font-family: var(--font-display);
+ font-size: 2rem;
+ color: var(--text-primary);
+ margin: var(--spacing-lg) 0 var(--spacing-sm);
+ border-bottom: 1px solid var(--border-color);
+ padding-bottom: 0.5rem;
+ }
+ .article-body h3 {
+ font-family: var(--font-display);
+ font-size: 1.5rem;
+ color: var(--text-primary);
+ margin: var(--spacing-md) 0 var(--spacing-xs);
+ }
+ .article-body p {
+ color: var(--text-secondary);
+ margin-bottom: var(--spacing-sm);
+ font-size: 1.05rem;
+ }
+ .article-body strong {
+ color: var(--accent-gold-light);
+ font-weight: 600;
+ }
+
+ .insight-card {
+ background: var(--bg-card);
+ border: 1px solid var(--border-color);
+ border-radius: 12px;
+ padding: var(--spacing-md);
+ margin: var(--spacing-md) 0;
+ }
+ .insight-card .label {
+ font-family: var(--font-mono);
+ font-size: 0.7rem;
+ letter-spacing: 0.1em;
+ color: var(--accent-gold);
+ text-transform: uppercase;
+ margin-bottom: 0.5rem;
+ }
+ .insight-card h4 {
+ font-size: 1.2rem;
+ color: var(--text-primary);
+ margin-bottom: 0.5rem;
+ }
+
+ .sidebar {
+ position: sticky;
+ top: 100px;
+ }
+ .sidebar-widget {
+ background: var(--bg-secondary);
+ border: 1px solid var(--border-color);
+ border-radius: 12px;
+ padding: var(--spacing-md);
+ margin-bottom: var(--spacing-md);
+ }
+ .sidebar-widget h5 {
+ font-family: var(--font-display);
+ color: var(--accent-gold);
+ font-size: 1.1rem;
+ margin-bottom: var(--spacing-sm);
+ border-bottom: 1px solid var(--border-color);
+ padding-bottom: 0.5rem;
+ }
+ .sidebar-widget ul {
+ list-style: none;
+ color: var(--text-muted);
+ }
+ .sidebar-widget ul li {
+ padding: 0.4rem 0;
+ border-bottom: 1px solid var(--border-color);
+ font-size: 0.9rem;
+ }
+
+ .faq-section {
+ margin-top: var(--spacing-lg);
+ border-top: 1px solid var(--border-color);
+ padding-top: var(--spacing-lg);
+ }
+ .faq-item {
+ margin-bottom: var(--spacing-md);
+ }
+ .faq-question {
+ font-weight: 600;
+ font-size: 1.1rem;
+ color: var(--text-primary);
+ margin-bottom: 0.25rem;
+ }
+ .faq-answer {
+ color: var(--text-muted);
+ }
+
+ footer {
+ background: var(--bg-secondary);
+ border-top: 1px solid var(--border-color);
+ padding: var(--spacing-lg) var(--spacing-md);
+ text-align: center;
+ color: var(--text-muted);
+ font-size: 0.85rem;
+ margin-top: var(--spacing-xl);
+ }
+ footer a {
+ color: var(--accent-gold);
+ text-decoration: none;
+ }
+
+ @media (max-width: 768px) {
+ .article-grid {
+ grid-template-columns: 1fr;
+ }
+ .hero-title {
+ font-size: 2.2rem;
+ }
+ nav ul {
+ gap: 1rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b06-gd-kb-info">
+  <meta property="og:description" content="t3b06-gd-kb-info에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://gongdeok-song-choice.link-hub.org/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <a href="/" class="logo">GONGDEOK GUIDE</a>
+ <nav>
+ <ul>
+ <li><a href="/">홈</a></li>
+ <li><a href="/guide">가이드</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/faq">FAQ</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 40개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0325.html">공덕 노래방 정보 활용한 구글 알고리즘 감점 치료 및 백링크 수술실 가이드</a>
+        <p class="post-item__summary">공덕 노래방 정보를 찾는 사용자들은 종종 검색 결과의 품질에 민감하게 반응하곤 합니다. 이처럼 사용자가 신뢰할 수 있는 정보를 제공하기 위해서는 검색엔진 최적화 상태가 건강해야 합니다. 검색 결과에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0326.html">공덕 노래방 정보 기반 합정 셔츠룸 단골들이 뽑은 핫플 매거진 분석</a>
+        <p class="post-item__summary">공덕 노래방 정보를 비교해 보면 이용자마다 선호하는 서비스의 기준이 매우 다릅니다. 이는 마치 합정 지역의 유흥 문화를 즐기는 방식과도 닮아 있습니다. 합리적인 가격대와 서비스 만족도를 동시에 고려</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0327.html">공덕 노래방 정보 조회와 구글 인덱싱 속도 초고속 광회선 대역폭 최적화</a>
+        <p class="post-item__summary">공덕 노래방 정보를 웹사이트에 게시할 때 많은 관리자가 범하는 실수가 있습니다. 바로 페이지 로딩 속도를 고려하지 않은 채 고용량 이미지를 남발하는 것입니다. 이는 검색엔진이 페이지를 인덱싱하는 과</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0221.html">공덕 노래방 정보를 찾는다면 연남 클럽 추천정보 활용법</a>
+        <p class="post-item__summary">흔히들 공덕 노래방 정보를 검색하다가 연남동의 밤 문화를 경험하고자 하는 분들이 많습니다. 하지만 온라인상의 정보는 워낙 파편화되어 있어 신뢰할 수 있는 데이터를 선별하는 과정이 필수적입니다. 단순</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0222.html">공덕 노래방 정보 대신 합정 셔츠룸 추천정보 가격 비교</a>
+        <p class="post-item__summary">많은 분이 공덕 노래방 정보를 찾아보다가 합정 지역의 유흥 시스템에 관심을 갖게 됩니다. 하지만 막상 합정 셔츠룸을 방문하려고 하면 천차만별인 가격 구조 때문에 결정을 내리기 어렵습니다. 서비스 비</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0223.html">공덕 노래방 정보와 다른 공덕 가라오케 추천정보 예약 팁</a>
+        <p class="post-item__summary">공덕 노래방 정보를 검색하다 보면 흔히들 가라오케를 일반 노래방과 혼동하여 예약 단계에서 실수를 범하곤 합니다. 많은 분이 전화 한 통으로 모든 것이 해결될 것이라 생각하지만, 예약 절차는 생각보다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0224.html">공덕 노래방 정보와 병행하는 상수 마사지 추천정보 체크리스트</a>
+        <p class="post-item__summary">공덕 노래방 정보를 찾는 분들이 종종 피로를 풀기 위해 상수 지역의 마사지 숍을 함께 검색하곤 합니다. 하지만 여러 업체 중에서 본인에게 꼭 맞는 곳을 찾기란 쉽지 않습니다. 접근성과 위치를 최우선</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0225.html">공덕 노래방 정보를 찾는다면 참고해야 할 망원 노래방 추천정보와 이용법</a>
+        <p class="post-item__summary">갑작스럽게 친구들과 망원 근처에서 저녁 식사를 마친 뒤 마이크를 잡고 싶어지는 상황은 흔합니다. 공덕 노래방 정보를 미리 검색해 보셨던 분들이라면 망원동 일대의 시설을 찾을 때도 비슷한 기준을 적용</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0226.html">공덕 노래방 정보로 알아보는 홍대 노래방 추천정보와 시간대 전략</a>
+        <p class="post-item__summary">많은 분이 홍대 노래방은 언제 가더라도 비용이 동일할 것이라는 오해를 가지고 방문하곤 합니다. 하지만 공덕 노래방 정보를 알고 계신 분들이라면 지역마다 시간대별 가격 정책이 유동적이라는 것을 익히 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0227.html">공덕 노래방 정보 기반 공덕 셔츠룸 추천정보와 인원별 팁</a>
+        <p class="post-item__summary">셔츠룸을 선택할 때는 인원 구성, 주대 정찰제 여부, 이동 편의성이라는 세 가지 조건을 먼저 고려해야 합니다. 공덕 노래방 정보를 찾는 과정에서 자연스럽게 셔츠룸으로 시야를 넓히는 분들이 늘고 있는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0228.html">공덕 노래방 정보가 말해주지 않는 연남 유흥 추천정보 비교 기준</a>
+        <p class="post-item__summary">오늘 밤 즐거운 시간을 보내기 위해 어떤 기준으로 업소를 고르고 계신가요? 많은 분들이 공덕 노래방 정보를 살피다가 영역을 넓혀 연남동 일대의 유흥 정보를 궁금해하십니다. 좋은 시설을 선택하는 것은</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0229.html">공덕 노래방 정보를 찾는다면 참고해야 할 마곡 가라오케 추천정보 활용법</a>
+        <p class="post-item__summary">최근 공덕 노래방 정보만큼이나 마곡 지역을 찾는 방문객들의 관심이 뜨겁습니다. 처음 방문하는 장소에서 신뢰할 수 있는 정보를 얻기 위해서는 체계적인 접근이 필요합니다. 방문하고자 하는 가라오케의 서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0230.html">공덕 노래방 정보 이용자가 알아두면 좋을 마곡 유흥 추천정보 비교 가이드</a>
+        <p class="post-item__summary">많은 분이 공덕 노래방 정보를 탐색하시면서 동시에 마곡 일대의 유흥 문화에도 큰 관심을 보이고 있습니다. 선택지가 많을수록 자신에게 최적화된 곳을 찾기란 생각보다 어려운 일입니다. 이때 두 가지 유</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0231.html">공덕 노래방 정보 확인 전 필수 체크, 합정 노래방 추천정보 예약 주의사항</a>
+        <p class="post-item__summary">공덕 노래방 정보를 살펴보는 분들 중 많은 이들이 인근 지역의 새로운 시설을 찾다가 예약 단계에서 낭패를 보곤 합니다. 가장 흔한 실패 지점은 예약 절차를 간과하고 무작정 방문하는 경우입니다. 사전</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">노래방을 이용하는 목적은 사람마다 다르지만, 일반적으로 음악 감상의 즐거움이나 모임의 분위기를 살리기 위해 방문합니다. 공덕 지역에서 노래방을 알아볼 때에는 먼저 자신의 모임 인원 수와 목적을 정리</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">서울 마포구 공덕 일대는 지하철 2호선과 5호선이 만나는 교통의 요지에 위치하여, 직장 동료나 친구들이 모이기 편리한 환경입니다. 이 지역에는 다양한 종류의 노래방이 산재해 있으며, 방문자의 목적과</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-1wy4mmg.html">공덕 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점</a>
+        <p class="post-item__summary">서울의 중심부에 자리 잡은 공덕은 수많은 회사와 고층 건물이 늘어선 대표적인 업무 지구로 잘 알려져 있습니다. 이 때문에 이곳의 놀거리나 여가 시설 역시 직장인들의 회식 문화에만 맞춰져 있을 것이라</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">노래방은 주로 모여서 취미를 즐기고 스트레스를 풀기 위한 대표적인 실내 공간으로, 공덕 지역에서 찾는 분들을 위해 기본적인 정보 안내가 필요할 수 있습니다. 노래방을 선택할 때는 음향 시스템의 품질</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">공덕 지역의 노래방을 찾는 경우, 먼저 업종과 주제를 정확히 이해하는 것이 중요합니다. 이 글은 방문 후기나 순위 대신, 정보가 무엇인지 설명하고 정리하는 데 초점을 맞춥니다. 노래방 정보는 가격,</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">공덕 지역의 노래방은 접근성과 편의 시설이 우수하여 많은 사람들이 선호하는 장소로 자리 잡고 있습니다. 대부분 대중교통을 이용하여 손쉽게 방문할 수 있으며, 인근에는 다양한 식당과 카페가 위치해 있</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
